@@ -1,0 +1,36 @@
+########################################
+# Cloud configuration
+########################################
+
+# Your Yandex Cloud ID
+cloud_id = "your-cloud-id"
+
+# Your Yandex Cloud Folder ID
+folder_id = "your-folder-id"
+
+# Default zone (optional)
+default_zone = "ru-central1-a"
+
+# Subnet CIDR (optional)
+default_cidr = ["10.0.1.0/24"]
+
+# VPC name (optional)
+vpc_name = "develop"
+
+########################################
+# SSH configuration
+########################################
+
+# Public SSH key for VM access
+# Example:
+# vms_ssh_public_root_key = "ssh-ed25519 AAAAC3Nz... user@host"
+vms_ssh_public_root_key = "your-public-ssh-key"
+
+########################################
+# Service account key
+########################################
+
+# Absolute path to your service account JSON key
+# Example:
+# service_account_key_file = "/home/username/.yc-sa-key.json"
+service_account_key_file = "/path/to/your/service-account-key.json"
