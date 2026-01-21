@@ -8,14 +8,38 @@ cloud_id = "your-cloud-id"
 # Your Yandex Cloud Folder ID
 folder_id = "your-folder-id"
 
-# Default zone (optional)
+# Default zone
 default_zone = "ru-central1-a"
 
-# Subnet CIDR (optional)
+# Subnet CIDR
 default_cidr = ["10.0.1.0/24"]
 
-# VPC name (optional)
+# VPC name
 vpc_name = "develop"
+
+########################################
+# VM configuration (Task #2)
+########################################
+
+# Image family for VM
+vm_web_image_family = "ubuntu-2004-lts"
+
+# VM name
+vm_web_name = "netology-develop-platform-web"
+
+# VM platform
+vm_web_platform_id = "standard-v3"
+
+# VM CPU settings
+vm_web_cores         = 2
+vm_web_memory        = 2
+vm_web_core_fraction = 50
+
+# VM scheduling
+vm_web_preemptible = true
+
+# Network settings
+vm_web_nat = true
 
 ########################################
 # SSH configuration

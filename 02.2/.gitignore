@@ -24,5 +24,4 @@ terraform.tfvars
 .terraformrc
 terraform.rc
 
-02/.terraform.lock.hcl
-02/.terraformrc.bak
+.terraform.lock.hcl
