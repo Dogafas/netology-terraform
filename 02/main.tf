@@ -14,11 +14,11 @@ data "yandex_compute_image" "ubuntu" {
 }
 resource "yandex_compute_instance" "platform" {
   name        = "netology-develop-platform-web"
-  platform_id = "standart-v4"
+  platform_id = "standard-v3" #такой платформы нет + здесь была опечатка в "standart-v4"
   resources {
-    cores         = 1
-    memory        = 1
-    core_fraction = 5
+    cores         = 2
+    memory        = 2
+    core_fraction = 50
   }
   boot_disk {
     initialize_params {
@@ -34,8 +34,9 @@ resource "yandex_compute_instance" "platform" {
   }
 
   metadata = {
-    serial-port-enable = 1
-    ssh-keys           = "ubuntu:${var.vms_ssh_root_key}"
+    serial-port-enable = "1" # Terraform ожидает строку, а не число 
+    ssh-keys           = "ubuntu:${var.vms_ssh_public_root_key}"
+
   }
 
 }
