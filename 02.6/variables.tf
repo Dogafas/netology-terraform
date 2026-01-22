@@ -34,10 +34,10 @@ variable "vpc_name" {
 # SSH configuration
 ########################################
 
-variable "vms_ssh_public_root_key" {
-  type        = string
-  description = "Public SSH key for VM access (ssh-ed25519 or ssh-rsa)"
-}
+# variable "vms_ssh_public_root_key" {
+#   type        = string
+#   description = "Public SSH key for VM access (ssh-ed25519 or ssh-rsa)"
+# }
 
 ########################################
 # Service account key
