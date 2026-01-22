@@ -1,0 +1,84 @@
+########################################
+# Cloud configuration
+########################################
+
+# Your Yandex Cloud ID
+cloud_id = "your-cloud-id"
+
+# Your Yandex Cloud Folder ID
+folder_id = "your-folder-id"
+
+# Default zone for WEB VM
+default_zone = "ru-central1-a"
+
+# Subnet CIDR for zone A
+default_cidr = ["10.0.1.0/24"]
+
+# VPC name
+vpc_name = "develop"
+
+########################################
+# WEB VM configuration (Task #2)
+########################################
+
+# Image family for WEB VM
+vm_web_image_family = "ubuntu-2004-lts"
+
+# WEB VM name
+vm_web_name = "netology-develop-platform-web"
+
+# WEB VM platform
+vm_web_platform_id = "standard-v3"
+
+# WEB VM CPU settings
+vm_web_cores         = 2
+vm_web_memory        = 2
+vm_web_core_fraction = 50
+
+# WEB VM scheduling
+vm_web_preemptible = true
+
+# WEB VM network settings
+vm_web_nat = true
+
+########################################
+# DB VM configuration (Task #3)
+########################################
+
+# DB VM name
+vm_db_name = "netology-develop-platform-db"
+
+# DB VM platform
+vm_db_platform_id = "standard-v3"
+
+# DB VM CPU settings
+vm_db_cores         = 2
+vm_db_memory        = 2
+vm_db_core_fraction = 20
+
+# DB VM scheduling
+vm_db_preemptible = true
+
+# DB VM network settings
+vm_db_nat = true
+
+# DB VM zone
+vm_db_zone = "ru-central1-b"
+
+########################################
+# SSH configuration
+########################################
+
+# Public SSH key for VM access
+# Example:
+# vms_ssh_public_root_key = "ssh-ed25519 AAAAC3Nz... user@host"
+vms_ssh_public_root_key = "your-public-ssh-key"
+
+########################################
+# Service account key
+########################################
+
+# Absolute path to your service account JSON key
+# Example:
+# service_account_key_file = "/home/username/.yc-sa-key.json"
+service_account_key_file = "/path/to/your/service-account-key.json"
