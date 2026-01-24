@@ -9,3 +9,19 @@ folder_id = "your-folder-id"
 
 # Зона по умолчанию
 default_zone = "ru-central1-a"
+
+# Описание ВМ для for_each (пример)
+each_vm = [
+  {
+    vm_name     = "main"
+    cpu         = 4
+    ram         = 8
+    disk_volume = 50
+  },
+  {
+    vm_name     = "replica"
+    cpu         = 2
+    ram         = 4
+    disk_volume = 30
+  }
+]

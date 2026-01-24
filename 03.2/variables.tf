@@ -39,3 +39,16 @@ variable "service_account_key_file" {
   description = "Absolute path to the JSON key file of the service account"
 }
 
+########################################
+# VM definitions for for_each
+########################################
+
+variable "each_vm" {
+  type = list(object({
+    vm_name     = string
+    cpu         = number
+    ram         = number
+    disk_volume = number
+  }))
+  description = "List of VM definitions for DB instances"
+}
