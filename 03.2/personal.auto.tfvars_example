@@ -1,0 +1,11 @@
+# Абсолютный путь к JSON‑ключу сервисного аккаунта
+service_account_key_file = "/absolute/path/to/authorized_key.json"
+
+# Идентификатор облака (cloud_id)
+cloud_id = "your-cloud-id"
+
+# Идентификатор каталога (folder_id)
+folder_id = "your-folder-id"
+
+# Зона по умолчанию
+default_zone = "ru-central1-a"
