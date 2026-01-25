@@ -25,3 +25,6 @@ each_vm = [
     disk_volume = 30
   }
 ]
+# Путь к публичному SSH ключу
+ssh_public_key_path = "/absolute/path/to/id_ed25519.pub"
+

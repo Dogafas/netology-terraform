@@ -52,3 +52,11 @@ variable "each_vm" {
   }))
   description = "List of VM definitions for DB instances"
 }
+
+########################################
+# SSH key path
+########################################
+
+variable "ssh_public_key_path" {
+  type = string
+}
