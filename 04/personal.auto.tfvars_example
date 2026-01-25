@@ -1,0 +1,30 @@
+# Абсолютный путь к JSON‑ключу сервисного аккаунта
+service_account_key_file = "/absolute/path/to/authorized_key.json"
+
+# Идентификатор облака (cloud_id)
+cloud_id = "your-cloud-id"
+
+# Идентификатор каталога (folder_id)
+folder_id = "your-folder-id"
+
+# Зона по умолчанию
+default_zone = "ru-central1-a"
+
+# Описание ВМ для for_each (пример)
+each_vm = [
+  {
+    vm_name     = "main"
+    cpu         = 4
+    ram         = 8
+    disk_volume = 50
+  },
+  {
+    vm_name     = "replica"
+    cpu         = 2
+    ram         = 4
+    disk_volume = 30
+  }
+]
+# Путь к публичному SSH ключу
+ssh_public_key_path = "/absolute/path/to/id_ed25519.pub"
+
