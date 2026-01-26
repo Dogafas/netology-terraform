@@ -1,14 +1,20 @@
 [webservers]
-%{ for vm in webservers ~}
+%{ for vm in vms ~}
+%{ if vm.group == "webservers" ~}
 ${vm.name} ansible_host=${vm.ip} fqdn=${vm.fqdn}
+%{ endif ~}
 %{ endfor ~}
 
 [databases]
-%{ for vm in databases ~}
+%{ for vm in vms ~}
+%{ if vm.group == "databases" ~}
 ${vm.name} ansible_host=${vm.ip} fqdn=${vm.fqdn}
+%{ endif ~}
 %{ endfor ~}
 
 [storage]
-%{ for vm in storage ~}
+%{ for vm in vms ~}
+%{ if vm.group == "storage" ~}
 ${vm.name} ansible_host=${vm.ip} fqdn=${vm.fqdn}
+%{ endif ~}
 %{ endfor ~}

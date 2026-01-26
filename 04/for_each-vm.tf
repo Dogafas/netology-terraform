@@ -8,7 +8,8 @@ locals {
 resource "yandex_compute_instance" "db" {
   for_each = local.each_vm_map
 
-  name = "db-${each.value.vm_name}"
+  name     = "db-${each.value.vm_name}"
+  hostname = "db-${each.value.vm_name}"
 
   platform_id = "standard-v1"
   zone        = var.default_zone
