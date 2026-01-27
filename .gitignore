@@ -7,6 +7,12 @@
 02/
 04/
 
+terraform.tfvars
+*.json
+*.key
+*.pem
+
+
 # Local .terraform directories
 **/.terraform/*
 
