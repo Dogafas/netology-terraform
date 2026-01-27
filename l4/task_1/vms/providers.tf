@@ -4,12 +4,13 @@ terraform {
       source = "yandex-cloud/yandex"
     }
   }
-  required_version = "~>1.12.0"
+  required_version = ">= 1.12.0, < 1.15.0"
+
 }
 
 provider "yandex" {
   cloud_id                 = var.cloud_id
   folder_id                = var.folder_id
   service_account_key_file = var.service_account_key_file
-  zone                     = "ru-central1-a"
+  zone                     = var.default_zone
 }
