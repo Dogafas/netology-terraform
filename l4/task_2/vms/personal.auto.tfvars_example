@@ -1,0 +1,17 @@
+# Example values for personal configuration
+# Copy this file to personal.auto.tfvars and fill in your real values.
+
+# Yandex Cloud identifiers
+cloud_id  = "your-cloud-id-here"
+folder_id = "your-folder-id-here"
+
+# Default compute zone
+default_zone = "ru-central1-a"
+
+# Path to your service account key file (JSON)
+# IMPORTANT: do NOT store the JSON key itself in this file.
+service_account_key_file = "/home/name/.yc/sa-key.json"
+
+# Your SSH public key (NOT private key)
+# Example: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... name@host
+ssh_public_key = "/home/name/.ssh/id_ed25519.pub"
