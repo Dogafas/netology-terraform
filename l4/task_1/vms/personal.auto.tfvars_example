@@ -1,0 +1,14 @@
+# Example values for personal configuration
+# Copy this file to personal.auto.tfvars and fill in your real values.
+
+cloud_id = "your-cloud-id-here"
+
+folder_id = "your-folder-id-here"
+
+default_zone = "ru-central1-a"
+
+# Path to your service account key file (JSON)
+service_account_key_file = "/home/user/yc-sa-key.json"
+
+# Your SSH public key (NOT private key)
+ssh_public_key = "ssh-ed25519 AAAA...your-public-key... user@example"

@@ -1,0 +1,35 @@
+# Local .terraform directories and files
+**/.terraform/*
+.terraform*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# own secret vars store.
+personal.auto.tfvars
+
+#checkov
+.external_modules
+
+#ansible
+*.cfg
+
+# Terraform state
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive vars
+terraform.tfvars
+*.auto.tfvars
+*.json
+
+# Local configs
+terraformrc
+.terraformrc
+
+# Sensitive variable files
+*.tfvars
+*.json
